@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+    --color-body: #F1901Bff;
+    --color-heading: #fff;
+    --color-base: #9D512Dff;
+    --color-base2: #603C2Cff;
+    --color-brand: #3D251Fff;
+    --color-brand2: #7D160Dff;
+    --sidebar-width: 240px;
+    --font-base: "Poppins";
+}
+
+body {
+    font-family: "Spline Sans", sans-serif;
+    color: var(--color-base);
+    line-height: 1.7;
+    background-color: var(--color-heading);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 600;
+    color: var(--color-body);
+}
+
+a {
+    color: var(--color-base2);
+    text-decoration: none;
+    transition: all 0.4s;
+}
+
+a:hover {
+    color: var(--color-brand);
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.shadow-on-hover {
+    transition: all 0.3s;
+}
+
+.shadow-on-hover:hover {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Btn */
+.btn {
+    border-radius: 10px;
+    padding: 14px 38px;
+}
+
+.btn-brand {
+    color: #fff;
+    font-weight: 500;
+    border-color: var(--color-brand);
+    background-color: var(--color-brand);
+}
+
+.btn-brand:hover {
+    border-color: var(--color-brand2);
+    background-color: var(--color-brand2);
+    color: #fff;
+}
+
+.bg-cover {
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+/* Slider */
+.slide-1 {
+    background: linear-gradient( rgb(39, 51, 68, 0.5) , rgb(39, 51, 68, 0.5) ), url(../images/About_Our_Food_Hero_1260x560_Desktop_hero-desktop.jpeg);
+}
+
+.slide-2 {
+    background: linear-gradient(rgba(39, 51, 68, 0.5), rgba(39, 51, 68, 0.5)), url(../images/Hero_HappyMeal_WhatsInYourFood_Desktop_1168x520_hero-desktop.jpeg);
+}
+
+.slide-3 {
+    background: linear-gradient(rgba(39, 51, 68, 0.5), rgba(39, 51, 68, 0.5)), url(../images/Hero_QPC_Desktop_1168x520.jpg);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgba(0,0,0,0.6);
+    width: 40px;
+    height: 70px;
+    margin: auto;
+}
+
+
+/* Navbar */
+.navbar {
+    background: var(--color-heading);
+    font-weight: 800;
+}
+
+.navbar .navbar-brand{
+    color: var(--color-brand2);
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.navbar-nav .nav-item {
+    font-size: 20px;
+    margin: 10px;
+}
+
+.navbar-nav .nav-link {
+    color: black;
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--color-body);
+}
+
+.navbar-nav .nav-link:hover {
+    background: black;
+    color: var(--color-body);
+    border-radius: 0px;
+}
+
+/* Intro text */
+.intro-text {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.intro-text p {
+    max-width: 500px;
+    margin: 16px auto 0 auto;
+}
+
+/* Menu */
+.menu-title {
+    color: var(--color-base2);
+}
+
+#menu {
+    background-color: var(--color-body);
+}
+
+#menu .nav-pills .nav-link {
+    background-color: var(--color-heading);
+    margin-left: 8px;
+    margin-right: 8px;
+    color: var(--color-brand2);
+    border-radius: 100px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+#menu .menu-item img{
+    border-radius: 100px;
+}
+
+#menu .nav-pills .nav-link.active {
+    background-color: var(--color-brand);
+    color: var(--color-heading);
+} 
+
+.menu-item {
+    background: var(--color-heading);
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(rgb(39, 51, 68, 0.5), rgb(39, 51, 68, 0.5)), url(../images/img_home-birthday.jpg);
+    padding-top: 120px;
+    padding-bottom: 30px;
+}
+
+.footer-top {
+    margin-bottom: 30px;
+}
+
+footer p,
+footer a{
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.social-links a {
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    font-size: 36px;
+}
+
+footer img {
+    max-width: 175px;
+}
+
+.footer-bottom {
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* LOGO */
+.logo-medium {
+    max-width: 100px;
+}
+
+/* Button Menu */
+.btn-menu {
+    border-radius: 100px;
+    padding: 10px 20px;
+    font-size: 12px;
+}
+
+.btn-menu-brand {
+    color: var(--color-heading);
+    font-weight: 500;
+    border-color: var(--color-brand);
+    background-color: var(--color-brand);
+}
+
+.btn-menu-brand:hover {
+    border-color: var(--color-brand2);
+    background-color: var(--color-brand2);
+    color: var(--color-body);
+}
+
+/* contacts */
+.contacts-title {
+    color: var(--color-brand);
+}
+#contacts {
+    background: var(--color-heading);
+}
+
+#contacts .form-control {
+    border-radius: 0;
+}
+
+#contacts .form-control:focus {
+    box-shadow: none;
+    border-color: var(--color-base);
+}
+
+#contacts input {
+    background-color: var(--color-base);
+}
+
+#contacts input .form-control {
+    height: 47px;
+}
+
+/* Login */
+
+.container-form{
+    border-radius: 20px;
+    align-items: center;
+    margin-top: 100px;
+    height: 500px;
+    width: 100%;
+    position: relative;
+}
+
+
+.container-form .form{
+    width: 47%;
+    margin-left: 400px;
+    margin-right: 400px;
+    padding: 30px;
+    background-color: var(--color-body);
+}
+
+.container-form .active .login{
+    margin-left: -50%;
+    opacity: 0;
+}
+
+.container-form .active .forms{
+    height: 600px;
+}
+.container-form .form .title{
+    position: relative;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.form .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    border-radius: 25px;
+}
+
+.form .input-field{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.input-field input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 2px solid var(--color-body);
+    border-top: 2px solid transparent;
+}
+
+.input-field input:is(:focus, :valid){
+    border-bottom-color: var(--color-brand);
+}
+
+.input-field i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--color-brand2);
+    font-size: 23px;
+    margin-left: 10px;
+}
+
+.input-field input:is(:focus, :valid) ~ i{
+    color: var(--color-brand);
+}
+
+.input-field i.icon{
+    left: 0;
+}
+.input-field i.showHidePw{
+    right: 0;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.form .checkbox-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.checkbox-text .checkbox-content{
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-content input{
+    margin: 0 8px -2px 4px;
+    accent-color: var(--color-brand);
+}
+
+.form .text{
+    color: var(--color-brand);
+    font-size: 14px;
+}
+
+.form a.text{
+    color: var(--color-brand2);
+    text-decoration: none;
+}
+.form a:hover{
+    text-decoration: underline;
+    color: var(--color-base2);
+}
+
+.form .button{
+    margin-top: 35px;
+}
+
+.form .button input{
+    border: none;
+    color: var(--color-body);
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    background-color: var(--color-base2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button input:hover{
+    background-color: var(--color-brand2);
+}
+
+
+
+
+
+
